@@ -29,11 +29,17 @@ Response on `http://127.0.0.1:3000/api/v1`
    ![message on /api/v1](./imgs/message.png)
 
 4.
-runing nginx service
 
+runing nginx service
+   ```ssh
+   ansible hng -i inventory.cfg -b -m command -a "systemctl status nginx"
+   ```
 ![nginx](./imgs/nginx.png)
 
 5.
-redis service
 
+runing redis service
+   ```ssh
+   ansible hng -i inventory.cfg -b -m command -a "ystemctl status redis-server"
+   ```
 ![nginx](./imgs/redis.png)
